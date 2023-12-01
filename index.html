@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recomendações de Produtos Cosméticos</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Recomendações de Produtos Cosméticos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="products" class="container">
+        <div class="product" onclick="showDetails('creme-facial')">
+            <img src="creme.jpg" alt="Creme Facial">
+            <div class="product-details">
+                <h2>Creme Facial Hidratante</h2>
+                <p>Um creme facial rico em nutrientes para manter a pele hidratada e saudável.</p>
+                <button>Ver Detalhes</button>
+            </div>
+        </div>
+
+        <div class="product" onclick="showDetails('shampoo-revitalizante')">
+            <img src="shampoo.jpg" alt="Shampoo Revitalizante">
+            <div class="product-details">
+                <h2>Shampoo Revitalizante</h2>
+                <p>Shampoo que revitaliza e fortalece os cabelos, deixando-os macios e brilhantes.</p>
+                <button>Ver Detalhes</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Recomendações Cosméticas</p>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
